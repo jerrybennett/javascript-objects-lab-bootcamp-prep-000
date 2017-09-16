@@ -11,7 +11,8 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
 
 function deleteFromObjectByKey(object, key) {
   var objectClone = Object.assign({}, object)
-  return delete objectClone[key]
+  delete objectClone[key]
+  return objectClone
 }
 
 function destructivelyDeleteFromObjectByKey(object, key) {
